@@ -1,0 +1,9 @@
+#!/bin/bash
+dscl . -create /Users/adminabc	
+dscl . -create /Users/adminabc UserShell /bin/bash
+dscl . -create /Users/adminabc RealName “adminabc”
+dscl . -create /Users/adminabc UniqueID 451
+dscl . -create /Users/adminabc PrimaryGroupID 20
+dscl . -create /Users/adminabc NFSHomeDirectory /var/adminabc
+dscl . -passwd /Users/adminabc jamf1234
+dscl . -append /Groups/admin GroupMembership adminabc
